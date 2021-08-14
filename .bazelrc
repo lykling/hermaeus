@@ -1,0 +1,20 @@
+build --repo_env=CC=clang
+
+# +------------------------------------------------------------+
+# | Common Options                                             |
+# +------------------------------------------------------------+
+# Force bazel output to use colors (good for jenkins) and print useful errors.
+common --color=yes
+
+# +------------------------------------------------------------+
+# | Build Configurations                                       |
+# +------------------------------------------------------------+
+# Make Bazel print out all options from rc files.
+# build --announce_rc
+build --show_timestamps
+
+# Enable colorful output
+build --cxxopt="-fdiagnostics-color=always"
+
+build --cxxopt="-std=c++17"
+build --host_cxxopt="-std=c++17"
