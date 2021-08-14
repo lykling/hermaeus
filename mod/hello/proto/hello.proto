@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package hermaeus.mod.hello;
+
+message Hello {
+  optional int32 index = 1;
+  optional string name = 2;
+}
