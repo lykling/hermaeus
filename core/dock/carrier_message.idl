@@ -1,0 +1,7 @@
+struct CarrierMessage
+{
+    long timestamp;
+    long seq;
+    string data;
+    string datatype;
+};
